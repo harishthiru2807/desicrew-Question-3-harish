@@ -1,0 +1,429 @@
+{
+  "document_types": {
+    "aadhaar_card": {
+      "name": "Aadhaar Card",
+      "category": "Identity",
+      "default_source_type": "printed",
+      "keywords": [
+        "aadhaar", "unique identification authority of india", "uidai",
+        "mera aadhaar", "government of india", "bharat sarkar", "enrolment", "male", "female"
+      ],
+      "required_fields": [
+        {
+          "field_name": "aadhaar_number",
+          "display_name": "Aadhaar Number",
+          "source_type": "printed",
+          "is_sensitive": true,
+          "mask_type": "aadhaar",
+          "description": "12-digit unique Aadhaar identification number"
+        },
+        {
+          "field_name": "full_name",
+          "display_name": "Full Name",
+          "source_type": "printed",
+          "is_sensitive": false,
+          "description": "Full name of the Aadhaar holder"
+        },
+        {
+          "field_name": "date_of_birth",
+          "display_name": "Date of Birth",
+          "source_type": "printed",
+          "is_sensitive": false,
+          "description": "Date of birth (DD/MM/YYYY) or Year of Birth"
+        },
+        {
+          "field_name": "address",
+          "display_name": "Address",
+          "source_type": "printed",
+          "is_sensitive": false,
+          "description": "Full residential address on Aadhaar"
+        }
+      ]
+    },
+    "pan_card": {
+      "name": "PAN Card",
+      "category": "Identity",
+      "default_source_type": "printed",
+      "keywords": [
+        "income tax department", "permanent account number", "pan card",
+        "govt. of india", "father's name", "signature", "nsdl", "uti"
+      ],
+      "required_fields": [
+        {
+          "field_name": "pan_number",
+          "display_name": "PAN Number",
+          "source_type": "printed",
+          "is_sensitive": true,
+          "mask_type": "pan",
+          "description": "10-character alphanumeric PAN (e.g. ABCDE1234F)"
+        },
+        {
+          "field_name": "full_name",
+          "display_name": "Full Name",
+          "source_type": "printed",
+          "is_sensitive": false,
+          "description": "Full name of cardholder"
+        },
+        {
+          "field_name": "fathers_name",
+          "display_name": "Father's Name",
+          "source_type": "printed",
+          "is_sensitive": false,
+          "description": "Father's name of cardholder"
+        },
+        {
+          "field_name": "date_of_birth",
+          "display_name": "Date of Birth",
+          "source_type": "printed",
+          "is_sensitive": false,
+          "description": "Date of birth in DD/MM/YYYY format"
+        }
+      ]
+    },
+    "driving_licence": {
+      "name": "Driving Licence",
+      "category": "Identity",
+      "default_source_type": "printed",
+      "keywords": [
+        "driving licence", "driving license", "union of india", "transport department",
+        "form 7", "dl no", "date of issue", "valid till", "rto"
+      ],
+      "required_fields": [
+        {
+          "field_name": "dl_number",
+          "display_name": "DL Number",
+          "source_type": "printed",
+          "is_sensitive": true,
+          "mask_type": "dl",
+          "description": "Driving licence number issued by state transport"
+        },
+        {
+          "field_name": "name",
+          "display_name": "Name",
+          "source_type": "printed",
+          "is_sensitive": false,
+          "description": "Name of licence holder"
+        },
+        {
+          "field_name": "date_of_issue",
+          "display_name": "Date of Issue",
+          "source_type": "printed",
+          "is_sensitive": false,
+          "description": "Issue date of licence"
+        },
+        {
+          "field_name": "valid_till_date",
+          "display_name": "Valid Till Date",
+          "source_type": "printed",
+          "is_sensitive": false,
+          "description": "Validity / expiry date of driving licence"
+        }
+      ]
+    },
+    "passport": {
+      "name": "Passport",
+      "category": "Identity",
+      "default_source_type": "printed",
+      "keywords": [
+        "passport", "republic of india", "p<ind", "mrz", "nationality",
+        "place of issue", "date of expiry", "type p"
+      ],
+      "required_fields": [
+        {
+          "field_name": "passport_number",
+          "display_name": "Passport Number",
+          "source_type": "printed",
+          "is_sensitive": true,
+          "mask_type": "passport",
+          "description": "Passport identifier (1 letter + 7 digits)"
+        },
+        {
+          "field_name": "date_of_birth",
+          "display_name": "Date of Birth",
+          "source_type": "printed",
+          "is_sensitive": false,
+          "description": "Date of birth of passport holder"
+        },
+        {
+          "field_name": "date_of_expiry",
+          "display_name": "Date of Expiry",
+          "source_type": "printed",
+          "is_sensitive": false,
+          "description": "Expiry date of passport"
+        },
+        {
+          "field_name": "mrz_line_2",
+          "display_name": "MRZ Line 2",
+          "source_type": "machine_readable_zone",
+          "is_sensitive": true,
+          "mask_type": "mrz",
+          "description": "Second machine-readable zone line (44 characters)"
+        }
+      ]
+    },
+    "nach_ecs_mandate": {
+      "name": "NACH / ECS Mandate",
+      "category": "Banking / Insurance",
+      "default_source_type": "handwritten",
+      "keywords": [
+        "nach", "ecs", "mandate form", "umrn", "sponsor bank code", "utility code",
+        "bank a/c number", "ifsc", "micr", "debit type", "frequency", "maximum amount"
+      ],
+      "required_fields": [
+        {
+          "field_name": "bank_account_number",
+          "display_name": "Bank Account Number",
+          "source_type": "handwritten",
+          "is_sensitive": true,
+          "mask_type": "account_number",
+          "description": "Customer bank account number (9 to 18 digits)"
+        },
+        {
+          "field_name": "ifsc_code",
+          "display_name": "IFSC Code",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "11-character Indian Financial System Code"
+        },
+        {
+          "field_name": "bank_name",
+          "display_name": "Bank Name",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Name of customer's bank"
+        },
+        {
+          "field_name": "amount_in_figures",
+          "display_name": "Amount in Figures",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Maximum mandate amount in figures (INR)"
+        },
+        {
+          "field_name": "frequency",
+          "display_name": "Frequency",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Debit frequency (Monthly / Quarterly / Half-Yearly / Yearly / As & when presented)"
+        }
+      ]
+    },
+    "fatca_annexure_form": {
+      "name": "FATCA Annexure Form",
+      "category": "Banking / Insurance",
+      "default_source_type": "handwritten",
+      "keywords": [
+        "fatca", "crs", "annexure", "tax residency", "foreign account tax compliance",
+        "tin", "country of tax residence", "place of birth", "nationality"
+      ],
+      "required_fields": [
+        {
+          "field_name": "policy_number",
+          "display_name": "Policy Number",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Insurance policy number"
+        },
+        {
+          "field_name": "tin_pan",
+          "display_name": "TIN / PAN",
+          "source_type": "handwritten",
+          "is_sensitive": true,
+          "mask_type": "pan",
+          "description": "Tax Identification Number or PAN"
+        },
+        {
+          "field_name": "fathers_name",
+          "display_name": "Father's Name",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Father's name of policyholder"
+        },
+        {
+          "field_name": "place_of_birth",
+          "display_name": "Place of Birth",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "City / town of birth"
+        },
+        {
+          "field_name": "nationality",
+          "display_name": "Nationality",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Nationality or citizenship"
+        }
+      ]
+    },
+    "benefit_illustration_declaration": {
+      "name": "Benefit Illustration Declaration",
+      "category": "Insurance",
+      "default_source_type": "handwritten",
+      "keywords": [
+        "benefit illustration", "declaration", "understood the features", "guaranteed and non-guaranteed",
+        "projected investment returns", "policyholder", "life assured"
+      ],
+      "required_fields": [
+        {
+          "field_name": "application_number",
+          "display_name": "Application Number",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Insurance application or proposal number"
+        },
+        {
+          "field_name": "policyholder_name",
+          "display_name": "Policyholder Name",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Full name of the prospective policyholder"
+        },
+        {
+          "field_name": "date",
+          "display_name": "Date",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Date of declaration signing"
+        },
+        {
+          "field_name": "place",
+          "display_name": "Place",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Place/city of signing"
+        }
+      ]
+    },
+    "moral_hazard_questionnaire": {
+      "name": "Moral Hazard Questionnaire",
+      "category": "Insurance",
+      "default_source_type": "handwritten",
+      "keywords": [
+        "moral hazard", "questionnaire", "mhq", "confidential report",
+        "life assured", "nominee relationship", "financial status", "insurable interest"
+      ],
+      "required_fields": [
+        {
+          "field_name": "application_number",
+          "display_name": "Application Number",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Application proposal number"
+        },
+        {
+          "field_name": "name_of_life_assured",
+          "display_name": "Name of Life Assured",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Full name of the life to be assured"
+        },
+        {
+          "field_name": "nominee_relationship",
+          "display_name": "Nominee Relationship",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Relationship of nominee with life assured"
+        },
+        {
+          "field_name": "date",
+          "display_name": "Date",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Date of report"
+        },
+        {
+          "field_name": "place",
+          "display_name": "Place",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Place/city of report"
+        }
+      ]
+    },
+    "multiple_policies_consent_form": {
+      "name": "Multiple Policies Consent Form",
+      "category": "Insurance",
+      "default_source_type": "handwritten",
+      "keywords": [
+        "multiple policies", "consent form", "existing insurance", "proposer",
+        "reason for multiple policies", "total sum assured", "additional coverage"
+      ],
+      "required_fields": [
+        {
+          "field_name": "proposer_name",
+          "display_name": "Proposer Name",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Full name of proposer"
+        },
+        {
+          "field_name": "reason_for_multiple_policies",
+          "display_name": "Reason for Multiple Policies (Selected Checkbox)",
+          "source_type": "checkbox",
+          "is_sensitive": false,
+          "description": "Selected option reason from checkbox list"
+        },
+        {
+          "field_name": "date",
+          "display_name": "Date",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Date of consent"
+        },
+        {
+          "field_name": "place",
+          "display_name": "Place",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Place of consent"
+        }
+      ]
+    },
+    "suitability_profiler_declaration": {
+      "name": "Suitability Profiler Declaration",
+      "category": "Insurance",
+      "default_source_type": "handwritten",
+      "keywords": [
+        "suitability profiler", "suitability report", "declaration", "specified person",
+        "agent code", "need analysis", "risk profile", "recommendation"
+      ],
+      "required_fields": [
+        {
+          "field_name": "application_number",
+          "display_name": "Application Number",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Application number"
+        },
+        {
+          "field_name": "name_of_life_assured",
+          "display_name": "Name of Life Assured",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Name of customer/life assured"
+        },
+        {
+          "field_name": "name_of_agent_sp",
+          "display_name": "Name of Agent/SP",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Name of licensed agent or specified person"
+        },
+        {
+          "field_name": "date",
+          "display_name": "Date",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Date of declaration"
+        },
+        {
+          "field_name": "place",
+          "display_name": "Place",
+          "source_type": "handwritten",
+          "is_sensitive": false,
+          "description": "Place of declaration"
+        }
+      ]
+    }
+  }
+}

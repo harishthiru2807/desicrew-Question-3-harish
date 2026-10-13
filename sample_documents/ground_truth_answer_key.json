@@ -1,0 +1,116 @@
+[
+  {
+    "document_id": "DOC_001",
+    "filename": "DOC_001_aadhaar_card.png",
+    "document_type": "aadhaar_card",
+    "fields": {
+      "aadhaar_number": "5482 9104 3821",
+      "full_name": "Aarav Sharma",
+      "date_of_birth": "1992-08-14",
+      "address": "Flat 402, Shanti Vihar, MG Road, Pune, Maharashtra 411001"
+    }
+  },
+  {
+    "document_id": "DOC_002",
+    "filename": "DOC_002_pan_card.png",
+    "document_type": "pan_card",
+    "fields": {
+      "pan_number": "ABCPS1234F",
+      "full_name": "PRIYA SUNDARAM",
+      "fathers_name": "SUNDARAM RAMASWAMY",
+      "date_of_birth": "1988-11-22"
+    }
+  },
+  {
+    "document_id": "DOC_003",
+    "filename": "DOC_003_driving_licence.png",
+    "document_type": "driving_licence",
+    "fields": {
+      "dl_number": "MH1220180054321",
+      "name": "VIKRAM JOSHI",
+      "date_of_issue": "2018-03-15",
+      "valid_till_date": "2038-03-14"
+    }
+  },
+  {
+    "document_id": "DOC_004",
+    "filename": "DOC_004_passport.pdf",
+    "document_type": "passport",
+    "fields": {
+      "passport_number": "Z2194832",
+      "date_of_birth": "1995-05-10",
+      "date_of_expiry": "2035-05-09",
+      "mrz_line_2": "Z2194832<2IND9505106M3505090<<<<<<<<<<<<<<02"
+    }
+  },
+  {
+    "document_id": "DOC_005",
+    "filename": "DOC_005_nach_ecs_mandate.pdf",
+    "document_type": "nach_ecs_mandate",
+    "fields": {
+      "bank_account_number": "987654321012",
+      "ifsc_code": "HDFC0001234",
+      "bank_name": "HDFC Bank Limited",
+      "amount_in_figures": "25,000.00",
+      "frequency": "Monthly"
+    }
+  },
+  {
+    "document_id": "DOC_006",
+    "filename": "DOC_006_fatca_annexure_form.png",
+    "document_type": "fatca_annexure_form",
+    "fields": {
+      "policy_number": "POL87654321",
+      "tin_pan": "BLRPR8765K",
+      "fathers_name": "Rajesh Kumar",
+      "place_of_birth": "Bengaluru",
+      "nationality": "Indian"
+    }
+  },
+  {
+    "document_id": "DOC_007",
+    "filename": "DOC_007_benefit_illustration_declaration.pdf",
+    "document_type": "benefit_illustration_declaration",
+    "fields": {
+      "application_number": "APP44332211",
+      "policyholder_name": "Sunita Patel",
+      "date": "2024-04-12",
+      "place": "Ahmedabad"
+    }
+  },
+  {
+    "document_id": "DOC_008",
+    "filename": "DOC_008_moral_hazard_questionnaire.png",
+    "document_type": "moral_hazard_questionnaire",
+    "fields": {
+      "application_number": "APP99887766",
+      "name_of_life_assured": "Rohan Malhotra",
+      "nominee_relationship": "Spouse",
+      "date": "2024-06-18",
+      "place": "Chandigarh"
+    }
+  },
+  {
+    "document_id": "DOC_009",
+    "filename": "DOC_009_multiple_policies_consent_form.png",
+    "document_type": "multiple_policies_consent_form",
+    "fields": {
+      "proposer_name": "Ananya Deshmukh",
+      "reason_for_multiple_policies": "Family financial security",
+      "date": "2024-08-25",
+      "place": "Nagpur"
+    }
+  },
+  {
+    "document_id": "DOC_010",
+    "filename": "DOC_010_suitability_profiler_declaration.pdf",
+    "document_type": "suitability_profiler_declaration",
+    "fields": {
+      "application_number": "APP55667788",
+      "name_of_life_assured": "Karthik Iyer",
+      "name_of_agent_sp": "Deepak Verma",
+      "date": "2024-09-30",
+      "place": "Chennai"
+    }
+  }
+]
